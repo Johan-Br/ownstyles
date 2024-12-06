@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="promocion">
+        <p>Rebaja del 25% en todo, usando TEES25 al pagar</p>
+    </div>
+    <div class="navegacion">
+        <nav>
+            <h3>T SHOP</h3>
+            <ul>
+                <li><a href="catlonuevo.html">Nuevo</a></li>
+                <li><a href="catmujer.html">Mujer</a></li>
+                <li><a href="cathombre.html">Hombre</a></li>
+                <li><a href="principal.html">inicio</a></li>
+                <li><a href="#"><img src="/logos/shopping.png" alt="Carrito de compras"> 0</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="principal">
+        <header>
+            <h1>T SHOP</h1>
+            <h2>Playeras para todos</h2>
+        </header>
+    </div>
+
+    <div class="categoria" >
+        <a href="/catmujer.html"><img src="/ropa/camisaM1.jpg" alt="Mujer" title="Mujer"></a>
+
+        <a href="/catlonuevo.html" class="mansito"><img
+                src="https://th.bing.com/th/id/OIP.jsI7il1OyuRgCtmV_6gOFgAAAA?rs=1&pid=ImgDetMain" alt="Nuevo"
+                title="Recientes"></a>
+        <a href="/cathombre.html"><img src="/ropa/camisaH4.jpeg" class="img" alt="Hombre" title="Hombre"></a>
+    </div>
+
+    <div class="novedades" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+        <h2>Novedades</h2>
+        <img src="/ropa/camisaN2.jpeg" alt="b">
+        <img src="/ropa/camisaN3.jpeg" alt="c">
+        <img src="/ropa/camisaN4.jpeg" alt="d">
+        <img src="/ropa/camisaN5.jpeg" alt="e">
+        <img src="/ropa/camisaH2.jpeg" alt="f">
+        <img src="/ropa/camisaH1.jpeg" alt="g">
+        <img src="/ropa/camisaH3.jpeg" alt="h">
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>T SHOP</h3>
+                <p>Email: info@misitio.com</p>
+                <p>Tel: +52-33-12345678</p>
+                <div class="social-icons">
+                    <a href="#"><img src="/logos/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="/logos/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="/logos/whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <table>
+                    <tr>
+                        <th>Tienda</th>
+                        <th>Nosotros</th>
+                        <th>Términos y condiciones</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Nuevo</a></td>
+                        <td><a href="#">Acerca de</a></td>
+                        <td><a href="#">Política de la tienda</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Mujer</a></td>
+                        <td><a href="#">Suscríbete</a></td>
+                        <td><a href="#">Envío y devoluciones</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Hombre</a></td>
+                        <td><a href="#">FAQ</a></td>
+                        <td><a href="#">Métodos de pago</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Creado por los duros de talento tech en especial el tacaño de migue</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hombreLink = document.querySelector('.navegacion ul li a[href="#"]:nth-child(3)');
+            hombreLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                window.location.href = 'file:///C:/Users/Administrador/Documents/XD/Nueva%20carpeta/cathombre.html';
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
